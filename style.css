@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+input, textarea {
+    outline: none;
+}
+
+body{
+     font-family: 'Open Sans', sans-serif;
+     overflow-x: hidden;
+     
+     
+}
+
+header{
+    background: url('asset/background-overlay.jpg') no-repeat;
+    background-color: gray;
+    background-blend-mode: multiply;
+    opacity: .8;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw; 
+    position: relative;
+    text-align: center;
+}
+
+/* (Buat opaciti, tapi diganti sama blend mode di header)
+header::after{
+    content: '';
+    background-color: #949292;
+    opacity: .5;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+*/
+
+header.wrapper-center{
+    position: absolute;
+    top: .5;
+    left: .5;
+    transform: translate(-50%, - 50%);
+}
+
+header .wrapper-center h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-shadow: 3px 3px 0px #000000;
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+
+header .wrapper-center img{
+    border-radius: 70%;
+    border: 10px solid #e6e6e6;
+    box-shadow: 2px 15px 9px 1px rgba(0, 0, 0, 0.7);
+    width: 20%;
+    transition: transform .5s ease-in-out;
+    cursor: pointer;
+}
+
+header .wrapper-center img:hover{
+    transform: scale(1.1);
+
+}
+
+header .wrapper-center ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+header .wrapper-center ul li a{
+    margin-right: 20px;
+    font-size: 3rem;
+    text-decoration: none;
+
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px #000000;
+    padding-bottom: 10px;
+    
+    
+}
+
+header .wrapper-center ul li a:hover{
+    border-bottom: 3px solid #ffffff;
+}
+
+.AboutMe{
+    background: #e6e6e6;
+    color: #000000;
+    text-align: center;
+    padding: 45px 15px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.AboutMe .wrapper h2{
+    text-shadow: 3px 3px 0px #7e7e7e;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 5px solid #000000;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+}
+
+.AboutMe .wrapper p{
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 60px;
+    margin-bottom: 90px;
+}
+
+.AboutMe .wrapper a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    padding: 10px 30px;
+    border: 5px solid #000000;
+    border-top: 0;
+    border-left: none;
+    border-right: none;
+}
+
+.skill{
+    width: 100vw;
+    background: #6b6b6b;
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+} 
+
+.skill .wrapper{
+    width: 80%;
+}
+
+.skill .wrapper h2{
+    text-shadow: 3px 3px 0px #000000;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 5px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.skill .wrapper-skill{
+    text-align: left;
+}
+
+.skill .wrapper-skill h5{
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px #000000;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.skill .wrapper-skill .background{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background: white ;
+    margin-bottom: 20px;
+}
+
+.skill .wrapper-skill .background .indicator{
+    position: absolute;
+    width: 80%;
+    height: 30px;
+    background: rgb(19, 19, 19) ;
+    z-index: 2;
+    
+}
+
+.skill .wrapper-skill .background .indicator-css{
+    position: absolute;
+    width: 80%;
+    height: 30px;
+    background: rgb(19, 19, 19) ;
+    z-index: 2;
+}
+
+.skill .wrapper-skill .background .indicator-sql{
+    position: absolute;
+    width: 65%;
+    height: 30px;
+    background: rgb(19, 19, 19) ;
+    z-index: 2;
+}
+
+.skill .wrapper-skill .background .indicator-python{
+    position: absolute;
+    width: 65%;
+    height: 30px;
+    background: rgb(19, 19, 19) ;
+    z-index: 2;
+}
+
+.skill .wrapper-skill .background .indicator-php{
+    position: absolute;
+    width: 65%;
+    height: 30px;
+    background: rgb(19, 19, 19) ;
+    z-index: 2;
+}
+
+
+.creation{
+    width: 100vw;
+    background: #e6e6e6;
+    color: #000000;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.creation .wrapper{
+    padding: 50px; 
+}
+
+.creation .wrapper h2{
+    text-shadow: 3px 3px 0px #7e7e7e;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 5px solid #000000;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+}
+
+.creation .wrapper .wrapper-creation{
+    display: grid;
+    grid-gap: 30px;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    
+} 
+
+.contact{
+    width: 100vw;
+    background: #6b6b6b;
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.contact .wrapper h2{
+    text-shadow: 3px 3px 0px #000000;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    border-bottom: 5px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.contact .wrapper-contact input, .contact .wrapper-contact textarea{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 11px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    
+}
+
+.contact .wrapper-contact textarea{
+    height: 125px;
+}
+
+.contact .wrapper-contact input[type="submit"]{
+
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 9px;
+    padding: 10px 30px;
+    border: 5px solid #000000;
+    border-top: 0;
+    border-left: none;
+    border-right: none;
+    background: #fafafa;
+    display: inline-block;
+    width: auto;
+    padding: 10px 60px;
+    transition: background .5s ease-in-out ;
+}
+
+.contact .wrapper-contact input[type="submit"]:hover{
+    background: #c2c2c2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 5);
+}
+
+footer{
+    background: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0px;
+}
